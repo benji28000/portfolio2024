@@ -82,4 +82,18 @@ html {
   transition: opacity 0.5s, max-height 0.5s ease-out, visibility 0s 0s;
 }
 
+.hide-scroll-bar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.h-competences{
+  height: 120vh;
+}
+
+
 

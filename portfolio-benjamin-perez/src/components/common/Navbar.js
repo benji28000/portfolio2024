@@ -1,14 +1,33 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
 
     const toggleMobileMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    const handleScroll = () => {
+        // Active le mode sticky si le défilement dépasse 80 pixels. Ajustez selon vos besoins.
+        if (window.scrollY > 80) {
+            setIsSticky(true);
+        } else {
+            setIsSticky(false);
+        }
+    }
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="bg-black text-white py-5 shadow-lg">
+        <nav className={`${isSticky ? 'bg-black bg-opacity-75' : 'bg-black'} fixed top-0 w-full z-50 text-white py-5 shadow-lg transition-opacity duration-300 ease-in-out`}>
             <div className="mx-auto px-4">
                 <div className="flex justify-between items-center">
                     {/* Nom à gauche */}
