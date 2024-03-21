@@ -59,7 +59,6 @@ html {
 .menu-open .block:nth-child(2) { animation-delay: 0.2s; }
 .menu-open .block:nth-child(3) { animation-delay: 0.3s; }
 .menu-open .block:nth-child(4) { animation-delay: 0.4s; }
-.menu-open .block:nth-child(5) { animation-delay: 0.5s; }
 
 
 /* Menu caché */
@@ -94,6 +93,12 @@ html {
 .h-competences{
   height: 120vh;
 }
+
+.h-formations{
+  height: 150vh;
+}
+
+
 
 
 

@@ -72,7 +72,7 @@ const Competences = () => {
     };
 
     return (
-        <div className="bg-neon-blue h-competences flex flex-col justify-between">
+        <div className="bg-neon-blue h-fit flex flex-col justify-between">
             <div className="text-white p-5 mx-20 flex-grow">
                 <h2 className="text-4xl font-bold mb-6">Compétences</h2>
                 <div className="flex space-x-10">
@@ -84,7 +84,7 @@ const Competences = () => {
                         ))}
                     </div>
                     <div className="flex-1">
-                        <h3 className="text-3xl mb-3">Frameworks & Bundles</h3>
+                        <h3 className="text-3xl mb-3">Frameworks</h3>
                         {frameworks.map((framework) => (
                             <ProgressBar language={framework.name} proficiency={framework.level} key={framework.name}
                                          colorClass="bg-green-600"/>

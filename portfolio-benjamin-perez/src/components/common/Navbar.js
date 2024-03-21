@@ -41,7 +41,6 @@ const Navbar = () => {
                         <a href="#presentation" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Presentation</a>
                         <a href="#competences" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Compétences</a>
                         <a href="#formations" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Formations</a>
-                        <a href="#experiences" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Expériences</a>
                         <a href="#contact" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Contact</a>
                     </div>
                     {/* Bouton du menu mobile */}
@@ -57,7 +56,6 @@ const Navbar = () => {
                 <a href="#presentation" className="block py-3 px-4 text-lg text-white hover:bg-blue-500 hover:text-white">Présentation</a>
                 <a href="#competences" className="block py-3 px-4 text-lg text-white hover:bg-blue-500 hover:text-white">Compétences</a>
                 <a href="#formations" className="block py-3 px-4 text-lg text-white hover:bg-blue-500 hover:text-white">Formations</a>
-                <a href="#experiences" className="block py-3 px-4 text-lg text-white hover:bg-blue-500 hover:text-white">Expériences</a>
                 <a href="#contact" className="block py-3 px-4 text-lg text-white hover:bg-blue-500 hover:text-white">Contact</a>
             </div>
         </nav>
