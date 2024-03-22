@@ -11,6 +11,8 @@ import tailwindIcon from '../assets/images/tailwind.svg';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import backgroundImage from '../assets/images/backgroud-img.svg';
+
 
 
 const skillIcons = [htmlIcon, phpIcon, jsIcon, JavaIcon, pythonIcon, reactIcon, symfonyIcon, jsonIcon, tailwindIcon];
@@ -70,11 +72,14 @@ const Competences = () => {
     };
 
     return (
-        <div className="bg-neon-blue min-h-screen flex flex-col justify-between">
-            <div className="text-white p-5 mx-5 md:mx-20 flex-grow">
-                <h2 className="text-4xl font-bold mb-6">Compétences</h2>
-                <div className="flex flex-col md:flex-row md:space-x-10">
-                    <div className="flex-1">
+
+    <div style={{zIndex: 1000, backgroundImage: `url(${backgroundImage})`, minHeight: '100vh'}}
+         className="bg-cover bg-center flex flex-col justify-between">
+
+        <div className="text-white p-5 mx-5 md:mx-20 flex-grow">
+            <h2 className="text-4xl font-bold mb-6">Compétences</h2>
+            <div className="flex flex-col md:flex-row md:space-x-10">
+                <div className="flex-1">
                         <h3 className="text-3xl mb-3">Langages</h3>
                         {skills.map((skill) => (
                             <ProgressBar language={skill.name} proficiency={skill.level} key={skill.name}

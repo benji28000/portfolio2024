@@ -61,24 +61,24 @@ const FormationsExperiences = () => {
     }, []);
 
     return (
-        <div className="bg-neutral-900 text-white p-5 flex flex-col md:flex-row md:justify-center gap-10">
-            <div className="flex-1 md:w-3/4">
-                <h1 className="text-4xl mb-6">Formations</h1>
-                <ol className="relative border-l border-gray-200 dark:border-gray-700">
+            <div className="bg-neutral-900 text-white p-5 flex flex-col  items-center gap-10">
+                <div className="max-w-[25rem] w-full">
+                    <h1 className="text-4xl mb-6">Formations</h1>
+                    <ol className="relative border-l border-gray-200 dark:border-gray-700">
                     {formations.map((formation, index) => (
                         <li key={index} className="mb-10 ml-6">
                             <div
                                 className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
                             <time
-                                className="mb-1 text-sm font-normal leading-none text-gray-400">{formation.annee}</time>
-                            <h3 className="text-lg font-semibold">{formation.titre}</h3>
-                            <p className="text-base font-normal text-gray-500">{formation.etablissement}</p>
+                                className="mb-1 text-sm font-normal leading-none text-gray-400 break-words">{formation.annee}</time>
+                            <h3 className="text-lg font-semibold break-words">{formation.titre}</h3>
+                            <p className="text-base font-normal text-gray-500 break-words">{formation.etablissement}</p>
                         </li>
                     ))}
                 </ol>
             </div>
 
-            <div className="flex-1 mt-10 md:mt-10 md:w-3/4">
+            <div className="max-w-[25rem] w-full">
                 <h1 className="text-4xl mb-6">Expériences Professionnelles</h1>
                 <ol className="relative border-l border-gray-200 dark:border-gray-700">
                     {experiences.map((experience, index) => (
@@ -86,10 +86,10 @@ const FormationsExperiences = () => {
                             <div
                                 className="absolute w-3 h-3 bg-green-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
                             <time
-                                className="mb-1 text-sm font-normal leading-none text-gray-400">{experience.annee}</time>
-                            <h3 className="text-lg font-semibold">{experience.poste}</h3>
-                            <p className="text-base font-normal text-gray-500">{experience.entreprise}</p>
-                            <p className="mt-2 text-sm text-gray-400">{experience.details}</p>
+                                className="mb-1 text-sm font-normal leading-none text-gray-400 break-words">{experience.annee}</time>
+                            <h3 className="text-lg font-semibold break-words">{experience.poste}</h3>
+                            <p className="text-base font-normal text-gray-500 break-words">{experience.entreprise}</p>
+                            <p className="mt-2 text-sm text-gray-400 break-words">{experience.details}</p>
                             <button
                                 className="text-neon-blue bg-transparent border border-neon-blue rounded-md px-4 py-2 mt-4 hover:bg-neon-blue hover:text-white transition"
                                 onClick={() => openModal(experience)}
@@ -100,35 +100,27 @@ const FormationsExperiences = () => {
                     ))}
                 </ol>
                 {modalOpen && (
-                    <div style={{
-                        position: 'fixed',
-                        top: '50%',
-                        left: '50%',
-                        transform: animateModal ? 'translate(-50%, -50%) scale(1)' : 'translate(-50%, -50%) scale(0.5)',
-                        opacity: animateModal ? 1 : 0,
-                        transition: 'transform 300ms ease-out, opacity 300ms ease-out',
-                        zIndex: 1000,
-                        padding: '20px',
-                        borderRadius: '10px',
-                        width: '80%',
-                        maxWidth: '600px',
-                        color: 'black',
-                        maxHeight: '80%',
-                        overflowY: 'auto',
-                        scrollbarWidth: 'none',
-                    }}>
-                        <div className={"bg-neon-blue"} style={{ padding: '20px', borderRadius: '10px' }}>
-                            <h2 className="text-2xl font-bold">{selectedExperience?.poste}</h2>
-                            <p>{selectedExperience?.annee}</p>
-                            <p>{selectedExperience?.entreprise}</p>
-                            <p>{selectedExperience?.details}</p>
-                            <Carousel />
-
-
-                            <button className="mt-4" onClick={closeModal}>Fermer</button>
+                    <div
+                        className={`fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 ${animateModal ? 'opacity-100' : 'opacity-0 pointer-events-none'} transition-opacity duration-300 ease-out`}
+                        style={{zIndex: 1000}}>
+                        <div className="bg-neon-blue overflow-auto rounded-lg shadow-lg max-w-lg w-full mx-auto p-5"
+                             style={{
+                                 transform: animateModal ? 'translateY(0)' : 'translateY(-50px)',
+                                 transition: 'transform 300ms ease-out',
+                             }}>
+                            <h2 className="text-2xl font-bold break-words">{selectedExperience?.poste}</h2>
+                            <p className="break-words">{selectedExperience?.annee}</p>
+                            <p className="break-words">{selectedExperience?.entreprise}</p>
+                            <p className="break-words">{selectedExperience?.details}</p>
+                            <Carousel/>
+                            <button onClick={closeModal}
+                                    className="mt-4 bg-red-500 text-white rounded px-4 py-2 hover:bg-red-700 transition-colors duration-200 ease-in-out">
+                                Fermer
+                            </button>
                         </div>
                     </div>
                 )}
+
             </div>
         </div>
     );

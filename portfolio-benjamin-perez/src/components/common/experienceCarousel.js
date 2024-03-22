@@ -37,10 +37,10 @@ const Carousel = () => {
                     />
                 ))}
             </div>
-            <button className="prev-button" onClick={handlePrev}>
+            <button className="prev-button hover:bg-green-600" onClick={handlePrev}>
                 &larr;
             </button>
-            <button className="next-button" onClick={handleNext}>
+            <button className="next-button hover:bg-green-600" onClick={handleNext}>
                 &rarr;
             </button>
         </div>
