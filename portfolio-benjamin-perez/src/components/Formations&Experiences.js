@@ -13,7 +13,6 @@ const FormationsExperiences = () => {
             titre: "Baccalauréat S, spécialité Mathématiques et NSI",
             etablissement: "Filière Générale Scientifique, Mention Très Bien",
         },
-        // Ajoutez d'autres formations ici...
     ];
 
     const experiences = [
@@ -29,11 +28,9 @@ const FormationsExperiences = () => {
             entreprise: "NetBizup - CM101",
             details: "Création d’une application web en ReactJS/Symfony qui permet de mener des analyses financière et extra-financière d’entreprises.",
         },
-        // Ajoutez d'autres expériences ici...
     ];
     const [animateModal, setAnimateModal] = useState(false);
 
-    // État pour gérer le modal ouvert/fermé et les détails de l'expérience sélectionnée
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedExperience, setSelectedExperience] = useState(null);
 
@@ -43,17 +40,15 @@ const FormationsExperiences = () => {
         setTimeout(() => setAnimateModal(true), 10); // Active l'animation après un court délai
     };
 
-    // Gère la fermeture du modal avec animation
     const closeModal = () => {
         setAnimateModal(false);
         setTimeout(() => {
             setModalOpen(false);
             setSelectedExperience(null);
-        }, 300); // Retarde la fermeture du modal jusqu'à ce que l'animation soit terminée
+        }, 300);
     };
 
     useEffect(() => {
-        // Assure que le modal se ferme lorsque l'utilisateur appuie sur la touche Échap
         const closeOnEscapeKeyDown = (e) => {
             if ((e.charCode || e.keyCode) === 27) {
                 closeModal();
@@ -83,7 +78,6 @@ const FormationsExperiences = () => {
                 </ol>
             </div>
 
-            {/* Colonne des expériences */}
             <div className="flex-1 mt-10 md:mt-10 md:w-3/4">
                 <h1 className="text-4xl mb-6">Expériences Professionnelles</h1>
                 <ol className="relative border-l border-gray-200 dark:border-gray-700">

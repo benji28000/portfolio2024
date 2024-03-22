@@ -15,7 +15,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const skillIcons = [htmlIcon, phpIcon, jsIcon, JavaIcon, pythonIcon, reactIcon, symfonyIcon, jsonIcon, tailwindIcon];
 
-// Composant ProgressBar
 const ProgressBar = ({ language, proficiency, colorClass }) => {
     return (
         <div className="mb-4">
@@ -34,7 +33,6 @@ const ProgressBar = ({ language, proficiency, colorClass }) => {
 };
 
 const Competences = () => {
-    // Liste des compétences et des frameworks avec leur niveau de maîtrise
     const skills = [
         { name: 'HTML-CSS', level: 70 },
         { name: 'PHP', level: 70 },
@@ -56,8 +54,8 @@ const Competences = () => {
     const goLeft = () => {
         if (scrollContainer.current) {
             scrollContainer.current.scrollBy({
-                left: -200, // Ajustez cette valeur selon la taille de vos éléments ou le défilement souhaité
-                behavior: 'smooth' // Cela assure que le défilement est animé de manière fluide
+                left: -200,
+                behavior: 'smooth'
             });
         }
     };
