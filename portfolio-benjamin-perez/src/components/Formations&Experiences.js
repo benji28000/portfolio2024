@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import Carousel from "./common/experienceCarousel"
 
 const FormationsExperiences = () => {
     const formations = [
@@ -65,15 +66,16 @@ const FormationsExperiences = () => {
     }, []);
 
     return (
-        <div className="bg-neutral-900 h-fit text-white p-5 flex">
-            {/* Colonne des formations */}
-            <div className="flex-1">
+        <div className="bg-neutral-900 text-white p-5 flex flex-col md:flex-row md:justify-center gap-10">
+            <div className="flex-1 md:w-3/4">
                 <h1 className="text-4xl mb-6">Formations</h1>
                 <ol className="relative border-l border-gray-200 dark:border-gray-700">
                     {formations.map((formation, index) => (
                         <li key={index} className="mb-10 ml-6">
-                            <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400">{formation.annee}</time>
+                            <div
+                                className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
+                            <time
+                                className="mb-1 text-sm font-normal leading-none text-gray-400">{formation.annee}</time>
                             <h3 className="text-lg font-semibold">{formation.titre}</h3>
                             <p className="text-base font-normal text-gray-500">{formation.etablissement}</p>
                         </li>
@@ -82,7 +84,7 @@ const FormationsExperiences = () => {
             </div>
 
             {/* Colonne des expériences */}
-            <div className="flex-1">
+            <div className="flex-1 mt-10 md:mt-10 md:w-3/4">
                 <h1 className="text-4xl mb-6">Expériences Professionnelles</h1>
                 <ol className="relative border-l border-gray-200 dark:border-gray-700">
                     {experiences.map((experience, index) => (
@@ -117,12 +119,18 @@ const FormationsExperiences = () => {
                         width: '80%',
                         maxWidth: '600px',
                         color: 'black',
+                        maxHeight: '80%',
+                        overflowY: 'auto',
+                        scrollbarWidth: 'none',
                     }}>
                         <div className={"bg-neon-blue"} style={{ padding: '20px', borderRadius: '10px' }}>
                             <h2 className="text-2xl font-bold">{selectedExperience?.poste}</h2>
                             <p>{selectedExperience?.annee}</p>
                             <p>{selectedExperience?.entreprise}</p>
                             <p>{selectedExperience?.details}</p>
+                            <Carousel />
+
+
                             <button className="mt-4" onClick={closeModal}>Fermer</button>
                         </div>
                     </div>
