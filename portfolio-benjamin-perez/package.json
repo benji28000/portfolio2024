@@ -49,5 +49,7 @@
     "postcss": "^8.4.37",
     "tailwindcss": "^3.4.1"
   },
-  "homepage": "https://benji28000.github.io/portfolio2024/"
+  "homepage": ".",
+  "proxy": "http://localhost:5000"
+
 }
