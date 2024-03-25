@@ -26,19 +26,19 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`${isSticky ? 'bg-black bg-opacity-75' : 'bg-black'} fixed top-0 w-full z-50 text-white py-5 shadow-lg transition-opacity duration-300 ease-in-out`}>
+        <nav className={`${isSticky ? 'bg-[#173753] bg-opacity-75' : 'bg-[#173753]'} fixed top-0 w-full z-50 text-white py-5 shadow-lg transition-opacity duration-300 ease-in-out`}>
             <div className="mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <div className="text-2xl font-bold">
-                        <a href="/" className="flex items-center">
+                        <a href="/" className="flex text-[#44E5E7] items-center">
                             Benjamin Perez
                         </a>
                     </div>
                     <div className="hidden md:flex items-center space-x-6 text-lg">
-                        <a href="#presentation" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Presentation</a>
-                        <a href="#competences" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Compétences</a>
-                        <a href="#formations" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Formations</a>
-                        <a href="#contact" className="py-2 px-4 hover:bg-blue-500 hover:text-white rounded transition duration-300">Contact</a>
+                        <a href="#presentation" className="py-2 text-[#44E5E7] px-4 hover:bg-[#44E5E7] hover:text-[#173753] rounded transition duration-300">Presentation</a>
+                        <a href="#competences" className="py-2 text-[#44E5E7] px-4 hover:bg-[#44E5E7] hover:text-[#173753] rounded transition duration-300">Compétences</a>
+                        <a href="#formations" className="py-2 text-[#44E5E7] px-4 hover:bg-[#44E5E7] hover:text-[#173753] rounded transition duration-300">Formations</a>
+                        <a href="#contact" className="py-2 text-[#44E5E7] px-4 hover:bg-[#44E5E7] hover:text-[#173753] rounded transition duration-300">Contact</a>
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleMobileMenu} className="text-blue-500 focus:outline-none">

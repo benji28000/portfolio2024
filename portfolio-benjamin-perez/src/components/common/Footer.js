@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="h-48 bg-black text-white flex items-center justify-center">
+        <footer className="h-48 bg-[#173753] text-white flex items-center justify-center">
                 <div className="">
                     <div className="  text-2xl font-bold mb-2">
                         <a href="/" className="">
