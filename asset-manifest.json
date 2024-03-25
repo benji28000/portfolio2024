@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio-benjamin-perez/static/css/main.6a83f837.css",
-    "main.js": "/portfolio-benjamin-perez/static/js/main.c34838fa.js",
-    "static/js/453.7561ad7c.chunk.js": "/portfolio-benjamin-perez/static/js/453.7561ad7c.chunk.js",
-    "static/media/backgroundBlue.jpg": "/portfolio-benjamin-perez/static/media/backgroundBlue.48fe80975ab5b1fa427e.jpg",
-    "static/media/Benjamin.png": "/portfolio-benjamin-perez/static/media/Benjamin.d6170f4a852d79302859.png",
-    "static/media/react.svg": "/portfolio-benjamin-perez/static/media/react.598d90dd4f36234e376cbc6ccd571550.svg",
-    "static/media/backgroud-img.svg": "/portfolio-benjamin-perez/static/media/backgroud-img.566d397dd6567851c795d2718571147b.svg",
-    "static/media/json.svg": "/portfolio-benjamin-perez/static/media/json.80927d72570d4a7c9dfe483a63eb5bec.svg",
-    "static/media/Java.svg": "/portfolio-benjamin-perez/static/media/Java.7ea5f3cd13c298dc043942bb8d44070a.svg",
-    "static/media/symfony.svg": "/portfolio-benjamin-perez/static/media/symfony.e457607c817e4c543ca5063957307f4b.svg",
-    "static/media/php.svg": "/portfolio-benjamin-perez/static/media/php.c72472c53c42fd026a594d40edbf3dc0.svg",
-    "static/media/python.svg": "/portfolio-benjamin-perez/static/media/python.7658fc5b493f0fa4979b28893c05b15b.svg",
-    "static/media/liquid-cheese.svg": "/portfolio-benjamin-perez/static/media/liquid-cheese.c78405581de054b54341317c3229966d.svg",
-    "index.html": "/portfolio-benjamin-perez/index.html",
-    "static/media/JS.svg": "/portfolio-benjamin-perez/static/media/JS.0b20a0cb19fd24035d41fe3aedc7fc47.svg",
-    "static/media/tailwind.svg": "/portfolio-benjamin-perez/static/media/tailwind.03fdecbfd26561a058e76b84d95184a7.svg",
-    "static/media/html-5.svg": "/portfolio-benjamin-perez/static/media/html-5.bfc29cc664956a7748f9ee78fa82ec7b.svg",
-    "main.6a83f837.css.map": "/portfolio-benjamin-perez/static/css/main.6a83f837.css.map",
-    "main.c34838fa.js.map": "/portfolio-benjamin-perez/static/js/main.c34838fa.js.map",
-    "453.7561ad7c.chunk.js.map": "/portfolio-benjamin-perez/static/js/453.7561ad7c.chunk.js.map"
+    "main.css": "/portfolio2024/portfolio-benjamin-perez/static/css/main.6a83f837.css",
+    "main.js": "/portfolio2024/portfolio-benjamin-perez/static/js/main.7118d3c4.js",
+    "static/js/453.7561ad7c.chunk.js": "/portfolio2024/portfolio-benjamin-perez/static/js/453.7561ad7c.chunk.js",
+    "static/media/backgroundBlue.jpg": "/portfolio2024/portfolio-benjamin-perez/static/media/backgroundBlue.48fe80975ab5b1fa427e.jpg",
+    "static/media/Benjamin.png": "/portfolio2024/portfolio-benjamin-perez/static/media/Benjamin.d6170f4a852d79302859.png",
+    "static/media/react.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/react.598d90dd4f36234e376cbc6ccd571550.svg",
+    "static/media/backgroud-img.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/backgroud-img.566d397dd6567851c795d2718571147b.svg",
+    "static/media/json.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/json.80927d72570d4a7c9dfe483a63eb5bec.svg",
+    "static/media/Java.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/Java.7ea5f3cd13c298dc043942bb8d44070a.svg",
+    "static/media/symfony.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/symfony.e457607c817e4c543ca5063957307f4b.svg",
+    "static/media/php.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/php.c72472c53c42fd026a594d40edbf3dc0.svg",
+    "static/media/python.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/python.7658fc5b493f0fa4979b28893c05b15b.svg",
+    "static/media/liquid-cheese.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/liquid-cheese.c78405581de054b54341317c3229966d.svg",
+    "index.html": "/portfolio2024/portfolio-benjamin-perez/index.html",
+    "static/media/JS.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/JS.0b20a0cb19fd24035d41fe3aedc7fc47.svg",
+    "static/media/tailwind.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/tailwind.03fdecbfd26561a058e76b84d95184a7.svg",
+    "static/media/html-5.svg": "/portfolio2024/portfolio-benjamin-perez/static/media/html-5.bfc29cc664956a7748f9ee78fa82ec7b.svg",
+    "main.6a83f837.css.map": "/portfolio2024/portfolio-benjamin-perez/static/css/main.6a83f837.css.map",
+    "main.7118d3c4.js.map": "/portfolio2024/portfolio-benjamin-perez/static/js/main.7118d3c4.js.map",
+    "453.7561ad7c.chunk.js.map": "/portfolio2024/portfolio-benjamin-perez/static/js/453.7561ad7c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a83f837.css",
-    "static/js/main.c34838fa.js"
+    "static/js/main.7118d3c4.js"
   ]
 }
