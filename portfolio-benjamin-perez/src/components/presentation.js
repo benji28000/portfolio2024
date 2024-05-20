@@ -1,6 +1,5 @@
 import React from 'react';
 import myPhoto from '../assets/images/Benjamin.png';
-import backgroundImage from "../assets/images/backgroud-img.svg";
 
 const Presentation = () => {
     return (

@@ -11,7 +11,6 @@ import tailwindIcon from '../assets/images/tailwind.svg';
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import backgroundImage from '../assets/images/liquid-cheese.svg';
 
 
 const skillIcons = [htmlIcon, phpIcon, jsIcon, JavaIcon, pythonIcon, reactIcon, symfonyIcon, jsonIcon, tailwindIcon];
