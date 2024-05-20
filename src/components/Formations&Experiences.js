@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "./common/experienceCarousel";
-import fond1 from "../assets/images/fond.jpg";
-import lac from "../assets/images/lac.jpg";
-import back from "../assets/images/backgroundBlue.jpg";
 import BlogHome from "../assets/images/Blog-Home.PNG";
 import Ecolandia from "../assets/images/Ecolandia.PNG";
 import fbconversion from "../assets/images/fb-conversion.PNG";
 import fbhome from "../assets/images/fb-home.PNG";
-import NetbizUpQuestionnaire from "../assets/images/NetbizUp-Questionnaire.PNG";
-import NetbizUpUser from "../assets/images/NetbizUp-User.PNG";
 import pluginWp from "../assets/images/plugin-wp.PNG";
 import BlogArticle from "../assets/images/Blog-Article.PNG";
 import Fukanban from "../assets/images/Fukanban.PNG";
@@ -22,6 +17,20 @@ import FulBankLogin from "../assets/images/FulBank-Login.PNG";
 import FulBankPaiement from "../assets/images/FulBank-Paiement.PNG";
 import FulBankProfil from "../assets/images/FulBank-Profil.PNG";
 import FulBankRegister from "../assets/images/FulBank-Register.PNG";
+import NetbizUpRegister from "../assets/images/NetbizUp-Register.PNG";
+import NetbizUpLogin from "../assets/images/NetbizUp-Login.PNG";
+import NetbizUpTags from "../assets/images/NetbizUp-Tags.PNG";
+import NetbizUpQuestionnaireView from "../assets/images/NetbizUp-Questionnaire-View.PNG";
+import NetbizUpQuestionnaire from "../assets/images/NetbizUp-Questionnaire.PNG";
+import NetbizUpQuestionnaire2 from "../assets/images/NetbizUp-Questionnaire2.PNG";
+import NetbizUpFichePratiqueView from "../assets/images/NetbizUp-FichePratique-View.PNG";
+import NetbizUpFichePratique from "../assets/images/NetbizUp-FichePratique.PNG";
+import NetbizUpUtilisateurs from "../assets/images/NetbizUp-Utilisateurs.PNG";
+import NetbizUpCodePromo from "../assets/images/NetbizUp-CodePromo.PNG";
+import NetbizUpHomeUser from "../assets/images/NetbizUp-Home-User.PNG";
+import NetbizUpEntreprise from "../assets/images/NetbizUp-Entreprise.PNG";
+import NetbizUpQuestionnaireSelection from "../assets/images/NetbizUp-Questionnaire-Selection.PNG";
+import NetbizUpQuestionnaireReponse from "../assets/images/NetbizUp-Questionnaire-Reponse.PNG";
 
 const FormationsExperiences = () => {
     const formations = [
@@ -50,7 +59,7 @@ const FormationsExperiences = () => {
             poste: "Développement d'une application web (ReactJS/Symfony)",
             entreprise: "NetBizup - CM101",
             details: "Création d’une application web en ReactJS/Symfony qui permet de mener des analyses financière et extra-financière d’entreprises.",
-            images: [NetbizUpQuestionnaire, NetbizUpUser]
+            images: [NetbizUpRegister, NetbizUpLogin, NetbizUpTags, NetbizUpQuestionnaireView, NetbizUpQuestionnaire, NetbizUpQuestionnaire2, NetbizUpFichePratiqueView, NetbizUpFichePratique, NetbizUpUtilisateurs, NetbizUpCodePromo, NetbizUpHomeUser, NetbizUpEntreprise, NetbizUpQuestionnaireSelection, NetbizUpQuestionnaireReponse]
         },
     ];
 
@@ -63,7 +72,7 @@ const FormationsExperiences = () => {
         {
             titre: "NetbizUp",
             description: "NetbizUp est une application d'analyse de risque créée en React/Symfony.",
-            images: [NetbizUpQuestionnaire, NetbizUpUser]
+            images: [NetbizUpRegister, NetbizUpLogin, NetbizUpTags, NetbizUpQuestionnaireView, NetbizUpQuestionnaire, NetbizUpQuestionnaire2, NetbizUpFichePratiqueView, NetbizUpFichePratique, NetbizUpUtilisateurs, NetbizUpCodePromo, NetbizUpHomeUser, NetbizUpEntreprise, NetbizUpQuestionnaireSelection, NetbizUpQuestionnaireReponse]
         },
         {
             titre: "Blog sur les IA",
