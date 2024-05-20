@@ -10,6 +10,18 @@ import fbhome from "../assets/images/fb-home.PNG";
 import NetbizUpQuestionnaire from "../assets/images/NetbizUp-Questionnaire.PNG";
 import NetbizUpUser from "../assets/images/NetbizUp-User.PNG";
 import pluginWp from "../assets/images/plugin-wp.PNG";
+import BlogArticle from "../assets/images/Blog-Article.PNG";
+import Fukanban from "../assets/images/Fukanban.PNG";
+import FukanbanCreate from "../assets/images/Fukanban-Create.PNG";
+import FulBankBeneficiaire from "../assets/images/FulBank-Beneficiaire.PNG";
+import FulBankCompte from "../assets/images/FulBank-Compte.PNG";
+import FulBankCrypto from "../assets/images/FulBank-Crypto.PNG";
+import FulBankDepot from "../assets/images/FulBank-Depot.PNG";
+import FulBankHistorique from "../assets/images/FulBank-Historique.PNG";
+import FulBankLogin from "../assets/images/FulBank-Login.PNG";
+import FulBankPaiement from "../assets/images/FulBank-Paiement.PNG";
+import FulBankProfil from "../assets/images/FulBank-Profil.PNG";
+import FulBankRegister from "../assets/images/FulBank-Register.PNG";
 
 const FormationsExperiences = () => {
     const formations = [
@@ -46,7 +58,7 @@ const FormationsExperiences = () => {
         {
             titre: "Fulbank",
             description: "Fulbank est une néo banque créée en Java avec JavaFX.",
-            images: [fbhome, fbconversion]
+            images: [FulBankLogin, FulBankRegister, fbhome,FulBankCompte, FulBankPaiement,FulBankBeneficiaire, FulBankHistorique, FulBankDepot,FulBankProfil,fbconversion, FulBankCrypto,]
         },
         {
             titre: "NetbizUp",
@@ -56,12 +68,12 @@ const FormationsExperiences = () => {
         {
             titre: "Blog sur les IA",
             description: "Un blog sur les IA créé en Symfony.",
-            images: [BlogHome]
+            images: [BlogHome, BlogArticle]
         },
         {
             titre: "Kanban",
             description: "Un kanban créé en Symfony.",
-            images: [fond1, lac, back]
+            images: [Fukanban, FukanbanCreate]
         },
         {
             titre: "Ecolandia",

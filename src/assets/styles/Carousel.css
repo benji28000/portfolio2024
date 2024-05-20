@@ -38,9 +38,6 @@
 
 .prev-button-enlarged,
 .next-button-enlarged {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -48,6 +45,9 @@
     padding: 10px;
     cursor: pointer;
     font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .prev-button-enlarged {

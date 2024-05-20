@@ -8,7 +8,7 @@ const Carousel = ({ images, allowZoom = true }) => {
     const handleNext = () => {
         const nextIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
         setCurrentIndex(nextIndex);
-        if (allowZoom) {
+        if (enlargedImage) {
             setEnlargedImage(images[nextIndex]);
         }
     };
@@ -16,7 +16,7 @@ const Carousel = ({ images, allowZoom = true }) => {
     const handlePrev = () => {
         const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
         setCurrentIndex(prevIndex);
-        if (allowZoom) {
+        if (enlargedImage) {
             setEnlargedImage(images[prevIndex]);
         }
     };
@@ -58,11 +58,11 @@ const Carousel = ({ images, allowZoom = true }) => {
                     className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
                     onClick={closeEnlargedImage}
                 >
-                    <div className="relative" onClick={(e) => e.stopPropagation()}>
-                        <img src={enlargedImage} alt="Enlarged" className="max-w-full max-h-full" />
+                    <div className="relative flex items-center justify-center" style={{ maxWidth: '75%', maxHeight: '75%' }} onClick={(e) => e.stopPropagation()}>
                         <button className="prev-button-enlarged hover:bg-green-600" onClick={(e) => { e.stopPropagation(); handlePrev(); }}>
                             &larr;
                         </button>
+                        <img src={enlargedImage} alt="Enlarged" className="max-w-full max-h-full mx-2" />
                         <button className="next-button-enlarged hover:bg-green-600" onClick={(e) => { e.stopPropagation(); handleNext(); }}>
                             &rarr;
                         </button>
