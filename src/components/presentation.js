@@ -21,6 +21,7 @@ const Presentation = () => {
                             <h2 className="text-2xl font-bold mb-4">Développeur web fullstack</h2>
                             <p>
                                 Je suis actuellement étudiant en L3 MIAGE à l'Université d'Orléans.
+                                <br>
                                 Je compte poursuivre mes études jusqu'en master MIAGE et devenir développeur fullstack puis chef de projet.
                             </p>
                             <div className="flex mt-5 space-x-10">
