@@ -23,6 +23,7 @@ const Presentation = () => {
                                 Je suis actuellement étudiant en L3 MIAGE à l'Université d'Orléans.
                                 <br>
                                 Je compte poursuivre mes études jusqu'en master MIAGE et devenir développeur fullstack puis chef de projet.
+                                </br>
                             </p>
                             <div className="flex mt-5 space-x-10">
                                 <a href="https://github.com/benji28000" target={"_blank"} rel={"noreferrer"}
