@@ -59,7 +59,7 @@ const FormationsExperiences = () => {
             poste: "Développement d'une application web (ReactJS/Symfony)",
             entreprise: "NetBizup - CM101",
             details: "Création d’une application web en ReactJS/Symfony qui permet de mener des analyses financière et extra-financière d’entreprises.",
-            images: [NetbizUpRegister, NetbizUpLogin, NetbizUpTags, NetbizUpQuestionnaireView, NetbizUpQuestionnaire, NetbizUpQuestionnaire2, NetbizUpFichePratiqueView, NetbizUpFichePratique, NetbizUpUtilisateurs, NetbizUpCodePromo, NetbizUpHomeUser, NetbizUpEntreprise, NetbizUpQuestionnaireSelection, NetbizUpQuestionnaireReponse]
+            images: []
         },
     ];
 
@@ -72,7 +72,7 @@ const FormationsExperiences = () => {
         {
             titre: "NetbizUp",
             description: "NetbizUp est une application d'analyse de risque créée en React/Symfony.",
-            images: [NetbizUpRegister, NetbizUpLogin, NetbizUpTags, NetbizUpQuestionnaireView, NetbizUpQuestionnaire, NetbizUpQuestionnaire2, NetbizUpFichePratiqueView, NetbizUpFichePratique, NetbizUpUtilisateurs, NetbizUpCodePromo, NetbizUpHomeUser, NetbizUpEntreprise, NetbizUpQuestionnaireSelection, NetbizUpQuestionnaireReponse]
+            images: []
         },
         {
             titre: "Blog sur les IA",
